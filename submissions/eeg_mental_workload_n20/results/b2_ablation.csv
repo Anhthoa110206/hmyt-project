@@ -1,0 +1,10 @@
+configuration,auc,balanced_accuracy,delta_auc_vs_full,delta_balacc_vs_full
+absolute only (42),0.8593,0.7756,-0.0284,-0.0257
+relative only (42),0.8504,0.7732,-0.0373,-0.0281
+abs+rel+ratios (87),0.885,0.7996,-0.0027,-0.0017
+without theta (56),0.8369,0.75,-0.0508,-0.0513
+without alpha (56),0.8764,0.7968,-0.0113,-0.0045
+without beta (56),0.8931,0.8071,0.0054,0.0058
+theta only (28),0.8893,0.8058,0.0016,0.0045
+without T7/T8/AF3/AF4/F7/F8 (48),0.8579,0.7874,-0.0298,-0.0139
+regional (4),0.6495,0.603,-0.2382,-0.1983

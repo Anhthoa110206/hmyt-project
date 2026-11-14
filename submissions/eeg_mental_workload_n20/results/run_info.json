@@ -1,0 +1,7 @@
+{
+  "features_file": "fb2c35af-02_features_all_epochs.csv",
+  "n_folds": 8,
+  "n_bootstrap": 2000,
+  "seed": 42,
+  "threshold": 0.5
+}
