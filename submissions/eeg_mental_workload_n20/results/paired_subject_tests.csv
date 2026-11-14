@@ -1,0 +1,7 @@
+feature,n_subjects,median_diff_high_minus_low,subjects_increase,subjects_decrease,wilcoxon_p
+reg_frontal_theta,48,0.1275,35,13,0.002194714990636726
+reg_parietal_alpha,48,-0.0872,18,30,0.014327137190655037
+reg_all_beta,48,0.0124,25,23,0.41826512544153616
+ratio_TBR,48,0.0729,32,16,0.004054454056230838
+ratio_ABR,48,-0.059,17,31,0.00819729322864049
+reg_FT_PA_index,48,0.3094,37,11,5.7851438128864174e-06
