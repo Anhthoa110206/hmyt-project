@@ -1,6 +1,6 @@
 # Progress Test 2 — n20 — eeg_mental_workload
 
-- Fork: <FORK_URL> · Branch: gd5-proposed-model
+- Fork: https://github.com/Anhthoa110206/hmyt-project · Branch: gd5-proposed-model
 - Members (student ID or alias) and roles:
   - 202414870 — team leader: pipeline, experiments, PROBAST+AI, FAIR, TRIPOD+AI
   - 202414866 — literature search, literature matrix, citation check
@@ -90,7 +90,7 @@ Reading: theta carries most of the information (removing it costs the most; thet
 
 ### B3. Comparison with the literature
 - **#10 Safari et al. 2024 (STEW): accuracy 89.53% ± 1.36% vs our balanced accuracy 0.801.** Not a fair comparison. Same dataset, but (a) different split: 7-fold CV whose unit (segments or subjects) is not confirmed, vs our subject-level GroupKFold; (b) different features (connectivity + feature selection vs band power, no selection); (c) different metric (accuracy vs balanced accuracy; our accuracy is 0.802 in `results/pipeline/10_model_comparison.csv`).
-- **#1 Chikhi et al. 2022:** not a classifier, but our subject-level paired tests agree in direction: frontal theta increases in 35/48 subjects (Wilcoxon p = 0.002), parietal alpha decreases in 30/48 (p = 0.014), beta unchanged (p = 0.42). Source: computed from `02_features_all_epochs.csv` with the paired-test step added to `src/stew_pipeline.py` (`13_paired_subject_tests.csv` after re-run). Non-equivalence: meta-analysis effect sizes (Hedges g) vs our within-subject medians.
+- **#1 Chikhi et al. 2022:** not a classifier, but our subject-level paired tests agree in direction: frontal theta increases in 35/48 subjects (Wilcoxon p = 0.002), parietal alpha decreases in 30/48 (p = 0.014), beta unchanged (p = 0.42). Source: `results/paired_subject_tests.csv` (subject means of the epoch features; Wilcoxon signed-rank; same step is in `src/stew_pipeline.py`). Non-equivalence: meta-analysis effect sizes (Hedges g) vs our within-subject medians.
 - **#3 Walther et al. 2023:** best DEAP accuracy 72.9% with deep learning on raw EEG. Different dataset and task (emotion), intra-subject split; cited only to justify hand-crafted features + simple models for small data.
 
 ### B4. Timeline to completion
